@@ -1,4 +1,5 @@
 temp/*
 logs/*
+logs/
 var/*
 lib/*
