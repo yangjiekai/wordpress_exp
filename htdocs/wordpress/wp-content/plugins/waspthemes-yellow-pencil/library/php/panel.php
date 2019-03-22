@@ -82,7 +82,7 @@ function yp_yellow_penci_bar() {
 		echo "<div class='yp-panel-no-selection'><div class='starter-notice'><div class='yp-hand'></div><div class='yp-hand-after'></div>Select any element on the page to start making changes.</div></div>";
 
 		echo "<div class='yp-panel-footer'>
-			<h3><a tabindex='-1' target='_blank' href='https://waspthemes.com/yellow-pencil/documentation/'>Documentation</a> / <a tabindex='-1' target='_blank' href='https://waspthemes.com/yellow-pencil/release-notes/'>V ".YP_VERSION."</a></h3>
+			<h3><a tabindex='-1' target='_blank' href='https://yellowpencil.waspthemes.com/documentation/'>Documentation</a> / <a tabindex='-1' target='_blank' href='https://yellowpencil.waspthemes.com/changelog/'>V ".YP_VERSION."</a></h3>
 			<span class='dashicons dashicons-admin-collapse yp-panel-hide' data-toggle='tooltip' data-placement='left' title='Hide Panel <span class=\"yp-shortcut-char\">(H)</span>'></span>
 		</div>";
 

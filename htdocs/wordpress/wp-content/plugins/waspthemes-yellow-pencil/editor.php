@@ -114,7 +114,7 @@
 		    font-weight:600;
 		}
 	</style>
-	<link rel="icon" type="image/ico" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAOVBMVEX0gCQAAAD0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCT0gCSKUoFyAAAAE3RSTlOwAAxIpYgVbZdlkCZ3PTJ/VV0dFPXcHwAAAKhJREFUKM+Vku0OgyAMRcttKd9Off+H3UCRkcwlnn/tCeSWQuYEWBzDXAzBnmTFEL1tqRILJoEgdCABk7DU8XfCPhc6iXiJOIvtJpWi2Na2jC+BxJqUvXhWQHlBE9BNxBbVnXdAixUJCkNg3y7JCR+WLC0BK11BhQ1YevWiQQYc/cI9FuHPiTyqu1S2z0GvOi/SEdOvoLrXOhH68iNJ0POtVpdMB+n4RW9DYQS6m35kkwAAAABJRU5ErkJggg=="/>
+	<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAA6lBMVEUAAADRmx7YoBzRnB/Wnh27jyfRnB/RnB+7jyfmqBjQmyDmqBjRnB+7jyflqBi6jie7jyfmqBi6jifVnh67jyfVnh7mqBjmqBfx8fHHliLElCPCkiTXnxy+kSbbohrVnh3TnB3hphnOmiDaoRzkpxjLmCHdpBrQmx/QnB67jyfKlx3NmBzPmhzr48/HlR3w8O7DkiDj1rXUnRnv7OTu6uHs5dXYu3bZvXzgwnrSr1zMo0Do2bTeypnjzZfdyJXUuXndvXTPrFvXsVjSrljdtVfKmy3ZslXSpj3FmC/SoSvJoULYqz7l17bapS3JtJT5AAAAGHRSTlMAATrUbdCeSPr38tXInp5zSEg79urXx3Iu3NUOAAADM0lEQVR4AbXW6XbaOhDAcRkCZL/JXW5tULEQyHZs4ywJkJ3sS9O+/+tUIztgMVJKndP/t56e+WVM4jkQldNq1tc550LmvdfO6xR9nbe3929ja8chs2r1kEPLC1Djb1K0EsoqCKt/FfNRFOmCWEaAlFALGQjVdpBP4Wwyxirv0HBIi0GVd9ghTd8sCG3eKmyRum8WcmA6nH4sNMi6bxfOhq7rDm8/ElaJD2FBjp8funmH3z4QCDUKQjxe7rvv7V+/dGwCoQZBcDE+ccudTG07SAAL4m7oLja87WBBAVjgsWvK+BQAIMEGYEEBWLBvgAUAkGAFTALpYyG0AkgAAAtWwMMCAEiwA1gAAAl2AAsAIMEOGATSxUJkAYwXhnSxECVG4MDDAgBYYHYACwDoAgD3ppep7WFBAViIEm9yrI0fTzuwABYAwAJLk2zhoBy0M88TWAAAC0DEWemkwbjwhAwJAOiCr2JREmf3+VE9aMexEJwXs7pAggXBPx2dMhAUMR6O25mahkMt/4UEEpQFSh9G8EMfFBGlcZzJcc5DmM+P/JkmADAXKH27cPMu3phagoskhLh4/v7+iZxrAgBBscCPq9IHf/XKGBBRCEfu9br8O3mcCQBACjg91i/5DcuTC9wsHPnxXCC9Qngw/PE95ScOHfn5RwGAErp915R6itA11c4FAEDoUtdUyn75bgLQswKJBNgSQO9zAPTnAGoHxBJA6lNqB8SngLYExBwIqgDQEoBvA3gODCoCmeBKIAMlBF0zQCWQWgGeA0owvkx3jPYpTe9G6L9GZzEAHACZWoGh1zmRC/T7cgWxeOQn8s5xlQIKgb5qByVMj6gCKEsT7chfvsgry4sAmAlHz7OT9gzjfRkIcOXnR/48U+OhBoCgiKehuiRyvK/d6jSJ8yN/n8UiDMPZd1qyVhJ63S6c9Rs5DsOaAMRkNInjJIqi+bfidbIxKAuBJI4ojAe6AM8hiSRJGTQT6mR7UBaAgGkZEoBImc/8stAkuwNdACPoWYS8stAizv9IgIwCpAubDiG1tepCWCOylUFlYYWovlQUQphX1TaqCPUameXsbm+s/Y7wz3/NlkOgn4bH29SReg/7AAAAAElFTkSuQmCC"/>
 	<script type="text/javascript">
 
 	// Vars
@@ -222,7 +222,7 @@
 	?>
 	<iframe id="iframe" class="yellow_pencil_iframe" data-href="<?php echo $frameNew; ?>" tabindex="-1"></iframe>
 
-	<iframe data-page-href="<?php echo yp_urlencode(esc_url($_GET['href'])); ?>" data-page-id="<?php echo $_GET['yp_page_id']; ?>" data-page-type="<?php echo $_GET['yp_page_type']; ?>" data-page-visitor="<?php echo isset($_GET['yp_out']); ?>" id="yp-customizing-type-frame" style="border-width: 0px;display:none;position:fixed;width:100%;height:100%;top:0;left:0;z-index:2147483647;" data-src="<?php echo $customize_type_link; ?>" tabindex="-1"></iframe>
+	<iframe data-page-href="<?php echo yp_urlencode(esc_url($_GET['href'])); ?>" data-page-id="<?php echo $_GET['yp_page_id']; ?>" data-page-type="<?php echo $_GET['yp_page_type']; ?>" data-page-visitor="<?php echo isset($_GET['yp_out']); ?>" id="yp-customizing-type-frame" style="border-width: 0px;display:none;position:fixed;width:100%;height:100%;top:0;left:0;z-index:2147483645;" data-src="<?php echo $customize_type_link; ?>" tabindex="-1"></iframe>
 
 	<div id="parent-bar"><span>Select an element to show element tree.</span><ul></ul></div>
 	
@@ -278,22 +278,22 @@
 
 	<div class="responsive-right-handle"></div>
 
-	<div class="responsive-size-text default-responsive-text"><a href="https://waspthemes.com/yellow-pencil/documentation/#responsive-tool" target="_blank" class="support-icon" data-toggle="tooltip" data-placement="right" title="Click here for learning how Responsive Tool work.">?</a> Affects <span class='device-size'></span>px and <span class='media-control' data-code='max-width'>below</span> screen sizes. <span class="device-name"></span></div>
-	<div class="responsive-size-text"><a href="https://waspthemes.com/yellow-pencil/documentation/#responsive-tool" target="_blank" class="support-icon" data-toggle="tooltip" data-placement="right" title="Click here for learning how Responsive Tool work.">?</a> Customizing <span class='property-size-text'></span>.</div>
+	<div class="responsive-size-text default-responsive-text"><a href="https://yellowpencil.waspthemes.com/docs/responsive-tool/" target="_blank" class="support-icon" data-toggle="tooltip" data-placement="right" title="Click here to learn how the responsive tool works.">?</a> Affects <span class='device-size'></span>px and <span class='media-control' data-code='max-width'>below</span> screen sizes. <span class="device-name"></span></div>
+	<div class="responsive-size-text"><a href="https://yellowpencil.waspthemes.com/docs/responsive-tool/" target="_blank" class="support-icon" data-toggle="tooltip" data-placement="right" title="Click here to learn how the responsive tool works.">?</a> Customizing <span class='property-size-text'></span>.</div>
 
 	<?php yp_yellow_penci_bar(); ?>
 	
 	<div class="top-area-btn-group">
-		<a target="blank" class="yellow-pencil-logo" href="https://waspthemes.com/yellow-pencil" tabindex="-1"></a>
+		<a target="blank" class="yellow-pencil-logo" href="https://yellowpencil.waspthemes.com/" tabindex="-1"></a>
 		<div class="top-area-btn cursor-main-btn yp-selector-mode active"><span class="no-aiming-icon"></span><span class="aiming-icon"></span><span class="sharp-selector-icon"></span></div>
 		<div data-toggle='tooltip-bar' data-placement='right' title='Find An Element <span class="yp-s-shortcut">(F)</span><span class="yp-tooltip-shortcut">Find elements by CSS selector.</span>' class="top-area-btn yp-search-btn active"><span class="search-selector-icon"></span></div>
 		<?php if($filter_css_editor){ ?>
 		<div data-toggle='tooltip-bar' data-placement='right' title='CSS Editor <span class="yp-s-shortcut">(É)</span><span class="yp-tooltip-shortcut">Edit style codes.</span>' class="top-area-btn css-editor-btn"><span class="css-editor-icon"></span></div>
 		<?php } ?>
-		<div data-toggle='tooltip-bar' data-placement='right' title='Responsive Mode <span class="yp-s-shortcut">(R)</span><span class="yp-tooltip-shortcut">Edit for a specific screen size.</span>' class="top-area-btn yp-responsive-btn active"><span class="responsive-icon"></span></div>
+		<div data-toggle='tooltip-bar' data-placement='right' title='Responsive Mode <span class="yp-s-shortcut">(R)</span><span class="yp-tooltip-shortcut">Edit for specific screen sizes.</span>' class="top-area-btn yp-responsive-btn active"><span class="responsive-icon"></span></div>
 		<div data-toggle='tooltip-bar' data-placement='right' title='Measuring Tool <span class="yp-s-shortcut">(M)</span><span class="yp-tooltip-shortcut">Measure elements.</span>' class="top-area-btn yp-ruler-btn"><span class="ruler-icon"></span></div>
 		<div data-toggle='tooltip-bar' data-placement='right' title='Wireframe <span class="yp-s-shortcut">(W)</span><span class="yp-tooltip-shortcut">Work on the layout easily.</span>' class="top-area-btn yp-wireframe-btn"><span class="wireframe-icon"></span></div>
-		<div data-toggle='tooltip-bar' data-placement='right' title='Design Information <span class="yp-s-shortcut">(D)</span><span class="yp-tooltip-shortcut">Typography, sizes and others.</span>' class="top-area-btn info-btn"><span class="design-information-icon"></span></div>
+		<div data-toggle='tooltip-bar' data-placement='right' title='Design Information <span class="yp-s-shortcut">(D)</span><span class="yp-tooltip-shortcut">Typography, sizes, and others.</span>' class="top-area-btn info-btn"><span class="design-information-icon"></span></div>
 
 		<?php if($filter_animation_tools){ ?>
 		<div data-toggle='tooltip-bar' data-placement='right' title='Animation Manager <span class="yp-tooltip-shortcut">Manage animations visually.</span>' class="top-area-btn animation-manager-btn"><span class="animation-manager-icon"></span></div>
@@ -324,17 +324,17 @@
 
 				<li class="hide_premium_options_checkbox yp-lite" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Hides all preimum features on Lite version.</span>'>Hide Pro Features <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
 
-				<li class="show_margin_padding_on_hover_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Shows margin and padding when hover any element before select the element.</span>'>Show Margin &amp; Padding On Hover <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
+				<li class="show_margin_padding_on_hover_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Shows margin and padding of the elements on mouseover.</span>'>Show Margin &amp; Padding On Hover <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
 
 				<li class="left-sublist-border"></li>
 
-				<li class="smart_responsive_technology_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">This feature automatically detects the styles that can harm Responsive System and limits them with a special screen size.</span>'>Smart Responsive Technology <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
+				<li class="smart_responsive_technology_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">This feature automatically detects the styles that can harm the responsive layout and limits them with special screen sizes.</span>'>Smart Responsive Technology <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
 
-				<li class="append_auto_comments_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Appends the new selectors to editor with CSS comment description.</span>'>Auto CSS Comments <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
+				<li class="append_auto_comments_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Appends new selectors to the editor with CSS comments.</span>'>Auto CSS Comments <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
 
-				<li class="smart_important_tag_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Adds important tag to CSS rules if required.</span>'>Smart Important Tag <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
+				<li class="smart_important_tag_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Adds the important tag to CSS rules if required.</span>'>Smart Important Tag <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
 
-				<li class="high_performance_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Enhances editor performance by use of a simple selector before selecting the element but as a result, there is no difference in CSS code.</span>'>High Performance <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
+				<li class="high_performance_checkbox" data-toggle='tooltip-bar' data-placement='right' title='<span class="yp-tooltip-shortcut2">Enhances editor performance by use of a simple selector before selecting the element but as a result, there is no difference in output CSS code.</span>'>High Performance <label class="interface-settings-switch"><input type="checkbox"><span class="interface-settings-slider"></span></label></li>
 
 				<li class="left-sublist-border manage-customizations-border"></li>
 
@@ -555,11 +555,11 @@
 		</div>
 		<ul>
 			<li>Access 800+ Quality Fonts</li>
-			<li>Hundreds of background patterns</li>
-			<li>Visual Resizing</li>
+			<li>Unlock all properties and tools</li>
+			<li>Stock images & background patterns</li>
+			<li>Visual Element Resizing</li>
 			<li>Gradient backgrounds & color palettes</li>
-			<li>Access all properties and tools</li>
-			<li>6 months premium support</li>
+			<li>Premium customer support</li>
 			<li>Lifetime license & free updates</li>
 		</ul>
 
@@ -568,7 +568,7 @@
 			<a class="yp-buy-link" target="_blank" href="https://waspthemes.com/yellow-pencil/buy">Go Pro</a>
 			<p class="yp-info-last-note">Money back guarantee. You can request a refund at any time!</p>
 		</div>
-		<a class='activate-pro' href="<?php echo admin_url('admin.php?page=yellow-pencil-license'); ?>" target="_blank">Activate License</a>
+		<a class='activate-pro' href="<?php echo admin_url('admin.php?page=yellow-pencil-license'); ?>" target="_blank">Already have a license?</a>
 	</div>
 
 	<div class="anim-bar">
@@ -611,7 +611,7 @@
         }
 
 		// All plugin element list
-        window.plugin_classes_list = 'yellow-pencil-canvas|yp-css-editor-disable|yellow-pencil-focus-canvas|yellow-pencil-extra-canvas|yellow-pencil-other-canvas|yp-high-performance|yp-no-wireframe|yp-element-not-visible|yp-iframe-placeholder|yp-element-picker-active|yp-data-updated|yp-animate-data|yp-inline-data|yp-animating|yp-scene-1|yp-sharp-selector-mode-active|yp-scene-2|yp-scene-3|yp-scene-4|yp-scene-5|yp-scene-6|yp-anim-creator|data-anim-scene|yp-animate-test-playing|ui-draggable-handle|yp-yellow-pencil-demo-mode|yp-yellow-pencil-loaded|yp-element-resized|resize-time-delay|yp_onscreen|yp_hover|yp_click|yp_focus|yp-recent-hover-element|yp-selected-others|yp-multiple-selected|yp-demo-link|yp-live-editor-link|yp-yellow-pencil|yp-content-selected|yp-hide-borders-now|ui-draggable|yp-selector-editor-active|yp-responsive-device-mode|yp-metric-disable|yp-css-editor-active|wtfv|yp-clean-look|yp-has-transform|yp-will-selected|yp-selected|yp-element-resizing|yp-element-resizing-width-right|yp-element-resizing-height-bottom|context-menu-active|yp-selectors-hide|yp-control-key-down|yp-selected-others-multiple-box|yp-iframe-mouseleave|yp-selected-boxed-top|yp-selected-boxed-bottom|yp-selected-boxed-left|yp-selected-boxed-right|yp-selected-boxed-margin-left|yp-zero-margin-w|yp-animate-manager-active|yp-wireframe-mode|yp-selector-hover|yp-size-handle|ypdw|ypdh|yp-body-selector-mode-active|yp-selected-boxed-margin-top|yp-selected-boxed-margin-bottom|yp-selected-boxed-margin-right|yp-selected-boxed-padding-left|yp-selected-boxed-padding-top|yp-selected-boxed-padding-bottom|yp-selected-boxed-padding-right|yp-selected-tooltip|yp-edit-tooltip|yp-edit-menu|yp-resorted|yp-full-width-selected|yp-zero-margin-h|yp-tooltip-small';
+        window.plugin_classes_list = 'yellow-pencil-canvas|yp-css-editor-disable|yellow-pencil-focus-canvas|yellow-pencil-extra-canvas|yellow-pencil-other-canvas|yp-high-performance|yp-no-wireframe|yp-element-not-visible|yp-iframe-placeholder|yp-element-picker-active|yp-data-updated|yp-animate-data|yp-inline-data|yp-animating|yp-scene-1|yp-sharp-selector-mode-active|yp-scene-2|yp-scene-3|yp-scene-4|yp-scene-5|yp-scene-6|yp-anim-creator|data-anim-scene|yp-animate-test-playing|ui-draggable-handle|yp-yellow-pencil-demo-mode|yp-yellow-pencil-loaded|yp-element-resized|resize-time-delay|yp_onscreen|yp_hover|yp_click|yp_focus|yp-recent-hover-element|yp-selected-others|yp-multiple-selected|yp-demo-link|yp-live-editor-link|yp-yellow-pencil|yp-content-selected|yp-hide-borders-now|ui-draggable|yp-selector-editor-active|yp-responsive-device-mode|yp-metric-disable|yp-css-editor-active|wtfv|yp-clean-look|yp-has-transform|yp-will-selected|yp-selected|yp-element-resizing|yp-element-resizing-width-right|yp-element-resizing-height-bottom|context-menu-active|yp-selectors-hide|yp-control-key-down|yp-selected-others-multiple-box|yp-iframe-mouseleave|yp-selected-boxed-top|yp-selected-boxed-bottom|yp-selected-boxed-left|yp-selected-boxed-right|yp-selected-boxed-margin-left|yp-zero-margin-w|yp-animate-manager-active|yp-wireframe-mode|yp-selector-hover|yp-size-handle|ypdw|ypdh|yp-body-selector-mode-active|yp-selected-boxed-margin-top|yp-selected-boxed-margin-bottom|yp-selected-boxed-margin-right|yp-selected-boxed-padding-left|yp-selected-boxed-padding-top|yp-selected-boxed-padding-bottom|yp-selected-boxed-padding-right|yp-selected-tooltip|yp-edit-tooltip|yp-edit-menu|yp-resorted|yp-full-width-selected|yp-zero-margin-h|yp-tooltip-small|yp-force-popup';
 
         // Replace all parent ways
         for(var s = 0; s < 51; s++){

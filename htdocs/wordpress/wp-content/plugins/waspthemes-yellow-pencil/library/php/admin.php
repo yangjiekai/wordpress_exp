@@ -58,7 +58,7 @@ function yp_welcome_screen_content(){
 	<h1>Welcome to YellowPencil <?php echo YP_VERSION; ?></h1>
 
 	<div class="about-text yp-about-text">
-		Congratulations! You are about to use most powerful design tool for WordPress ever.</div>
+		Congratulations! You are about to use the most powerful design tool for WordPress ever.</div>
 	<div class="wp-badge yp-badge">Version <?php echo YP_VERSION; ?></div>
 	<p>
 		<a href="<?php echo admin_url('themes.php?page=yellow-pencil'); ?>" class="button button-primary button-large">let's start!</a>
@@ -77,8 +77,8 @@ function yp_welcome_screen_content(){
 			<h3>Front-End Design Tool For WordPress!</h3>
 			<p>YellowPencil is a visual design editor WordPress plugin which allows you to customize your website in real-time with a few clicks. Keep your website's design under control with YellowPencil editor.</p>
 
-			<h3>Release Notes</h3>
-			Check out <a href="https://waspthemes.com/yellow-pencil/release-notes/" target="_blank">release notes</a> to see update details.
+			<h3>Changelog</h3>
+			Check out <a href="https://yellowpencil.waspthemes.com/changelog/" target="_blank">Changelog</a> to see update details.
 		</div>
 		<div class="clear"></div>
 
@@ -90,10 +90,10 @@ function yp_welcome_screen_content(){
 			<h3>Resources</h3>
 			<p></p>
 			<ul>
-				<li><a href="https://waspthemes.com/yellow-pencil/documentation/" target="_blank">Documentation</a></li>
-				<li><a href="https://waspthemes.com/yellow-pencil/" target="_blank">Plugin Website</a></li>
+				<li><a href="https://yellowpencil.waspthemes.com/documentation/" target="_blank">Documentation</a></li>
+				<li><a href="https://yellowpencil.waspthemes.com/" target="_blank">Plugin Website</a></li>
 				<li><a href="https://waspthemes.ticksy.com/" target="_blank">Official Support Forum</a></li>
-				<li><a href="https://waspthemes.com/yellow-pencil/release-notes/" target="_blank">Release Notes</a></li>
+				<li><a href="https://yellowpencil.waspthemes.com/changelog/" target="_blank">Changelog</a></li>
 			</ul>
 			
 		</div>
@@ -134,8 +134,8 @@ function yp_welcome_screen_content(){
 			<img class="yp-img-center" src="<?php echo WT_PLUGIN_URL; ?>images/promo-2.png">
 			
 			<div class="yp-feature-column">
-				<h4>Manage The Changes</h4>
-				<p>Manage changes at any time from <a href="<?php echo admin_url("admin.php?page=yellow-pencil-changes"); ?>">this page</a>. Take full control over your website's design.</p>
+				<h4>Manage Customizations</h4>
+				<p>Manage customizations at any time from <a href="<?php echo admin_url("admin.php?page=yellow-pencil-changes"); ?>">this page</a>. Take full control over your website's design.</p>
 			</div>
 
 		</div>
@@ -145,7 +145,7 @@ function yp_welcome_screen_content(){
 			
 			<div class="yp-feature-column">
 				<h4>Community & Support!</h4>
-				<p>Join our <a target="_blank" href="https://www.facebook.com/groups/YellowPencils/">Facebook community</a> and checking out <a target="_blank" href="https://waspthemes.com/yellow-pencil/documentation/">documentation</a>.</p>
+				<p>Join our <a target="_blank" href="https://www.facebook.com/groups/YellowPencils/">Facebook community</a> and checking out <a target="_blank" href="https://yellowpencil.waspthemes.com/documentation/">documentation</a>.</p>
 			</div>
 
 		</div>
@@ -211,7 +211,13 @@ function yp_css_style_li($title, $href, $type, $page_id = null, $page_type = nul
 	if($type == 'single'){
 
 		$key = $page_id;
-		$data = get_post_meta($page_id, '_wt_css', true);
+
+		// Specific single types
+		if($page_id == "lostpassword" || $page_id == "register" || $page_id == "login" || $page_id == "home"){
+			$data = get_option("wt_".$page_id."_css");
+		}else{
+			$data = get_post_meta($page_id, '_wt_css', true);
+		}
 
 		$frontID = get_option('page_on_front');
     	$blogID = get_option('page_for_posts');
@@ -242,6 +248,16 @@ function yp_css_style_li($title, $href, $type, $page_id = null, $page_type = nul
 
 	if($title == ""){
 		$title = "Unknown";
+	}
+
+	// Non customizable in lite
+	if($page_id == "lostpassword" || $page_id == "register" || $page_id == "login"){
+
+		// no link
+		if(!defined("WTFV")){
+			$href = "";
+		}
+
 	}
 
 	?>
@@ -332,7 +348,7 @@ function yp_option_update(){
 
 		}
 
-		// Update output format.
+		// Update draft mode.
 		if(isset($_POST['yp-draft-mode'])){
 
 			$value = sanitize_key($_POST['yp-draft-mode']);
@@ -343,7 +359,17 @@ function yp_option_update(){
 
 		}
 
-		
+
+		// Update default globa.
+		if(isset($_POST['yp-default-global'])){
+
+			$value = sanitize_key($_POST['yp-default-global']);
+
+			if(!update_option('yp-default-global',$value)){
+				add_option('yp-default-global',$value);
+			}
+
+		}
 
 	}
 
@@ -363,7 +389,7 @@ function yp_option_func() {
 		$active_tab = str_replace("toplevel_page_", "", $active_tab);
 
 		// Updated message.
-		if(isset($_POST['yp-output-option']) || isset($_POST['yp_json_import_data']) || isset($_POST['yp-draft-mode'])){
+		if(isset($_POST['yp-output-option']) || isset($_POST['yp_json_import_data']) || isset($_POST['yp-draft-mode']) || isset($_POST['yp-default-global'])){
 			?>
 				<div id="message" class="updated">
 			        <p><strong>Settings saved.</strong></p>
@@ -630,9 +656,9 @@ function yp_option_func() {
 							$frontpage_id = get_option('page_on_front');
 
 							if($frontpage_id == 0 || $frontpage_id == null){
-								yp_css_style_li("Non-Static Homepage", get_home_url().'/', 'template', 'home', 'home');
+								yp_css_style_li("Non-Static Homepage", get_home_url().'/', 'single', 'home', 'home');
 							}else{
-								yp_css_style_li("Non-Static Homepage".'<small>(Inactive)</small>', get_home_url().'/', 'template', 'home', 'home');
+								yp_css_style_li("Non-Static Homepage".'<small>(Inactive)</small>', get_home_url().'/', 'single', 'home', 'home');
 							}
 
 						}
@@ -643,7 +669,7 @@ function yp_option_func() {
 							$count++;
 							$allCount++;
 
-							yp_css_style_li("WordPress Login", wp_login_url(), 'template', 'login', 'login');
+							yp_css_style_li("WordPress Login", wp_login_url(), 'single', 'login', 'login');
 
 						}
 
@@ -653,7 +679,7 @@ function yp_option_func() {
 							$count++;
 							$allCount++;
 
-							yp_css_style_li("WordPress Register", wp_registration_url(), 'template', 'register', 'register');
+							yp_css_style_li("WordPress Register", wp_registration_url(), 'single', 'register', 'register');
 
 						}
 
@@ -663,7 +689,7 @@ function yp_option_func() {
 							$count++;
 							$allCount++;
 
-							yp_css_style_li("WordPress Lost Password", wp_registration_url(), 'template', 'lostpassword', 'lostpassword');
+							yp_css_style_li("WordPress Lost Password", wp_registration_url(), 'single', 'lostpassword', 'lostpassword');
 
 						}
 
@@ -731,7 +757,7 @@ function yp_option_func() {
                 	<div class="yp-tab-section">
 
                 	<h2>CSS Print Method</h2>
-					<p class="yp-heading-text">External CSS still in beta test, Please use dynamic CSS if there is an issue.</p>
+					<p class="yp-heading-text">External CSS still in beta test, please use dynamic CSS if there is an issue.</p>
 					<form method="POST">
 						<table class="form-table yp-form-table">
 							<tbody>
@@ -763,6 +789,20 @@ function yp_option_func() {
 
 						<table class="form-table yp-form-table">
 							<tbody>
+							<?php if(defined("WTFV")){ ?>
+							<tr>
+								<?php
+
+									$a = '';
+									if(get_option('yp-default-global') == '1'){
+										$a = 'checked="checked"';
+									}
+
+								?>
+								<th><input name="yp-default-global" value="0" <?php echo $a; ?> type="hidden" /><label><input name="yp-default-global" value="1" <?php echo $a; ?> type="checkbox" /> Set Global Customization As Default</label></th>
+								<td><code>single customization type is the default.</code></td>
+							</tr>
+							<?php } ?>
 							<tr>
 								<?php
 
@@ -982,7 +1022,7 @@ function yp_option_func() {
 	                    		<?php if(defined('WTFV')){ ?>
 		                    		<p class='description'>Don't have the license yet? <a href='https://waspthemes.com/yellow-pencil/buy/' target='_blank'>Purchase a license</a>!</p>
 		                    	<?php }else{ ?>
-		                    		<p class='description'>Check out <a href='https://waspthemes.com/yellow-pencil/' target='_blank'>plugin website</a> for more information.</p>
+		                    		<p class='description'>Check out <a href='https://yellowpencil.waspthemes.com/' target='_blank'>plugin website</a> for more information.</p>
 		                    	<?php } ?>
 
 						<?php }else{ ?>

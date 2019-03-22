@@ -262,7 +262,7 @@ function yp_update_message(){
             
             ?>
             <div class="update-nag yp-update-info-bar">
-                <a target="_blank" href="https://waspthemes.com/yellow-pencil/release-notes">YellowPencil <?php echo $versionView; ?></a> is available! <a style="box-shadow:none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;" href="#" class="yp_update_link">Please update now.</a>
+                <a target="_blank" href="https://yellowpencil.waspthemes.com/changelog/">YellowPencil <?php echo $versionView; ?></a> is available! <a style="box-shadow:none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;" href="#" class="yp_update_link">Please update now.</a>
             </div>
             <?php
                 
@@ -313,6 +313,7 @@ function yp_update_javascript() { ?>
     <script type="text/javascript" >
     jQuery(document).ready(function($) {
 
+        // Update API
         jQuery(".yp_update_link").click(function(){
 
             // Only one click.
@@ -340,7 +341,6 @@ function yp_update_javascript() { ?>
         jQuery(".yp-product-activation").on("click",function(){
             jQuery(this).addClass("disabled");
         });
-
 
     });
     </script><?php

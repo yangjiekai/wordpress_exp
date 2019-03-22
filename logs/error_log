@@ -60,3 +60,11 @@ sh: 1: -t: not found
 [Tue Mar 19 20:46:56.308635 2019] [lbmethod_heartbeat:notice] [pid 14294] AH02282: No slotmem from mod_heartmonitor
 [Tue Mar 19 20:46:57.116858 2019] [mpm_prefork:notice] [pid 14294] AH00163: Apache/2.4.38 (Unix) OpenSSL/1.0.2q PHP/7.3.2 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
 [Tue Mar 19 20:46:57.116928 2019] [core:notice] [pid 14294] AH00094: Command line: '/opt/lampp/bin/httpd -E /opt/lampp/logs/error_log -D SSL -D PHP'
+[Thu Mar 21 21:20:58.977951 2019] [mpm_prefork:notice] [pid 14294] AH00169: caught SIGTERM, shutting down
+[Thu Mar 21 21:21:34.547752 2019] [ssl:warn] [pid 6019] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Mar 21 21:21:34.547819 2019] [ssl:warn] [pid 6019] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 21 21:21:34.598615 2019] [ssl:warn] [pid 6020] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Mar 21 21:21:34.598644 2019] [ssl:warn] [pid 6020] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 21 21:21:34.598749 2019] [lbmethod_heartbeat:notice] [pid 6020] AH02282: No slotmem from mod_heartmonitor
+[Thu Mar 21 21:21:35.071540 2019] [mpm_prefork:notice] [pid 6020] AH00163: Apache/2.4.38 (Unix) OpenSSL/1.0.2q PHP/7.3.2 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Thu Mar 21 21:21:35.071606 2019] [core:notice] [pid 6020] AH00094: Command line: '/opt/lampp/bin/httpd -E /opt/lampp/logs/error_log -D SSL -D PHP'

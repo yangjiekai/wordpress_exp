@@ -66,7 +66,6 @@
 	*:not(input):not(textarea){
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
-		-khtml-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
@@ -90,7 +89,6 @@
 	    width:620px;
 	    background-color:#FFFFFF;
 	    -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.14);
-	    -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.14);
 	    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.14);
 	    position:fixed;
 	    top:50%;
@@ -117,6 +115,7 @@
 	    z-index:2147483645;
 	    opacity:0.6;
 	    display:block;
+	    cursor: -webkit-zoom-out;
 	    cursor: zoom-out;
 	}
 
@@ -247,7 +246,8 @@
 	.customize-type-icon{
 		width:64px;
 		height:64px;
-		background-size:100%;
+		-webkit-background-size:100% 100%;
+		        background-size:100%;
 		display:inline-block;
 
 		-webkit-filter:grayscale(1);
@@ -320,7 +320,8 @@
 		top: 18px;
 		right: -30px;
 		z-index: 50;
-		background-size: 16px;
+		-webkit-background-size: 16px 16px;
+		        background-size: 16px;
 		background-repeat: no-repeat;
 		background-position: center;
 		opacity: 0.9;
@@ -372,6 +373,7 @@
 		background-color:#FFF;
 
 		display:inline-block;
+		width:-webkit-calc(100% - 42px);
 		width:calc(100% - 42px);
 		height: 36px;
 		line-height: 1.5;
@@ -384,7 +386,8 @@
 	    display: inline-block;
 	    overflow: hidden;
 	    white-space: nowrap;
-	    text-overflow: ellipsis;
+	    -o-text-overflow: ellipsis;
+	       text-overflow: ellipsis;
 	}
 
 	.customize-type-select:hover,.customize-type-select.active{
@@ -401,6 +404,7 @@
 		padding: 10px 0px;
 		-webkit-border-radius: 0 0 3px 3px;
 		border-radius: 0 0 3px 3px;
+		width: -webkit-calc(98% - 42px);
 		width: calc(98% - 42px);
 		-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.6);
 		box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.6);
@@ -507,7 +511,8 @@
 	}
 
 	.customize-special-url:hover,.customize-special-url.active{
-		box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.08) inset;
+		-webkit-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.08) inset;
+		        box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.08) inset;
 	}
 
 	.customize-special-url.active{
@@ -529,6 +534,7 @@
 		background-color:#FFF;
 
 		display:none;
+		width:-webkit-calc(100% - 42px);
 		width:calc(100% - 42px);
 		height: 36px;
 		line-height: 1.5;
@@ -573,11 +579,9 @@
 		line-height: 1.4;
 
 		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
 		border-radius: 4px;
 
 		-webkit-box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.14);
-		-moz-box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.14);
 		box-shadow:0px 0px 4px 1px rgba(0, 0, 0, 0.14);
 
 		text-align:center;
@@ -602,7 +606,6 @@
 		font-size: 12px;
 		font-weight: 600;
 		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
 		border-radius: 2px;
 		cursor: pointer;
 		opacity: 0.92;
@@ -632,6 +635,7 @@
 	    z-index:2147483646;
 	    opacity:0.5;
 	    display:none;
+	    cursor:-webkit-zoom-out;
 	    cursor:zoom-out;
 	}
 
@@ -643,7 +647,8 @@
 	li.has-style:after{
 		position: absolute;
 		content: "Edited";
-		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		        border-radius: 3px;
 		background-color: rgba(0, 0, 0, 0.08);
 		right: 38px;
 		top: 50%;
@@ -709,7 +714,6 @@
 		top: 2px;
 		padding: 1px 4px;
 		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
 		border-radius: 3px;
 		color: #FFF;
 		opacity:0.8;
@@ -743,16 +747,16 @@
 		background-color: rgba(0, 0, 0, 0.09);
 		padding: 2px 6px;
 		margin-left: 6px;
-		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		        border-radius: 4px;
 		font-size: 11px;
 		font-weight: 400;
-		position: relative;
-		top: -1px;
 	}
 
 	.customize-type-select span strong{
 		display:none;
 	}
+
 	</style>
 
 	<script>
@@ -761,6 +765,8 @@
 		function typeClick(element){
 
 			var types = document.getElementsByClassName("customize-type-radio");
+
+			var type = element.getAttribute("data-value");
 
 			Array.prototype.forEach.call(types ,function(entry){
 				entry.classList.remove("active");
@@ -830,6 +836,9 @@
 
 		function typeListSelect(element){
 
+			// Getting ID
+			var id = element.getAttribute("data-id-value");
+
 			// Disable list click on see page link
 			if(element.classList.contains("no-click") == true){
 
@@ -849,9 +858,10 @@
 			for(var x = 0; x < types.length; x++){
 			    types[x].classList.remove("disabled");
 			}
-			
-			// Getting ID
-			var id = element.getAttribute("data-id-value");
+
+			// Get frontpage ID
+			var frontPage = "<?php echo $frontpage_id; ?>";
+			var blogPage = "<?php echo $blogpage_id; ?>";
 
 			// Disable Single on these methods
 			if(id == 'search' || id == 'tag' || id == 'category' || id == 'archive' || id == 'author' || id == '404' || id == '0'){
@@ -869,9 +879,6 @@
 
 			}
 
-			// Get frontpage ID
-			var frontPage = "<?php echo $frontpage_id; ?>";
-			var blogPage = "<?php echo $blogpage_id; ?>";
 
 			// Disable template on these methods
 			if(id == 'home' || id == frontPage || id == blogPage || id == "login" || id == "register" || id == "lostpassword"){
@@ -1059,9 +1066,13 @@
 			var parentIframe = window.parent.document.getElementById("yp-customizing-type-frame");
 			parentIframe.style.display = 'none';
 
+			// var this mode
+			var editMode = document.querySelectorAll(".customize-type-radio.active")[0].getAttribute("data-value");
+
 			// IF no change, click only closing popup.
 			if(document.querySelectorAll(".only-continue-btn").length > 0){
 				window.parent.document.getElementById("yp-current-page").classList.remove("active");
+				window.parent.document.querySelectorAll('#customizing-type-list > ul > li[data-value="'+editMode+'"]')[0].click();
 				return false;
 			}
 
@@ -1069,7 +1080,6 @@
 			var pageHref;
 			var pageType;
 			var pageID;
-			var editMode = document.querySelectorAll(".customize-type-radio.active")[0].getAttribute("data-value");
 
 			// Base
 			var yp_base_uri = "<?php echo yp_get_uri(); ?>";
@@ -1443,7 +1453,7 @@
     		if (hrefPopup[hrefPopup.length-1] === "/"){hrefPopup = hrefPopup.slice(0,-1);}
 
 
-			if(idPopup == id && hrefPopup == href && typePopup == type && modePopup == mode && visitorPopup == visitor){
+			if(idPopup == id && hrefPopup == href && typePopup == type && visitorPopup == visitor){
 
 				// Continue if same
 				document.querySelectorAll(".new-edit-continue")[0].innerHTML = "Continue";
@@ -1554,6 +1564,7 @@
 						// check option
 						if(empty($homeStyle) != true && $homeStyle != "false"){
 							$hasHome = " has-style";
+							$homeRule = substr_count($homeStyle, ';');
 						}
 
 						// check option
@@ -1622,7 +1633,7 @@
 					<?php
 
 					if($frontpage_id == 0 || $frontpage_id == null){ ?>
-						<li onclick="typeListSelect(this)" class="active<?php echo $hasHome; ?>" data-id-value="home" data-type-value="home" data-type-href="<?php echo yp_urlencode(esc_url(get_home_url())); ?>"><i onclick="seePageLink(this)"></i><span>Homepage</span></li>
+						<li onclick="typeListSelect(this)" class="active<?php echo $hasHome; ?>" data-id-value="home" data-single="<?php echo $homeRule; ?>" data-template="<?php echo $homeRule; ?>" data-type-value="home" data-type-href="<?php echo yp_urlencode(esc_url(get_home_url())); ?>"><i onclick="seePageLink(this)"></i><span>Homepage</span></li>
 					<?php } ?>
 			        <li onclick="typeListSelect(this)" data-id-value="search" <?php echo $hasSearch; ?> data-template="<?php echo $searchRule; ?>" data-type-value="search" data-type-href="<?php echo yp_urlencode(esc_url(get_home_url().'/?s='.yp_getting_last_post_title())); ?>"><i onclick="seePageLink(this)"></i><span>Search page</span></li>
 			        <?php if($tag_link != null){ ?><li onclick="typeListSelect(this)" <?php echo $hasTag; ?> data-template="<?php echo $tagRule; ?>" data-id-value="tag" data-type-value="tag" data-type-href="<?php echo yp_urlencode(esc_url($tag_link)); ?>"><i onclick="seePageLink(this)"></i><span>Tag page</span></li><?php } ?>
