@@ -1,0 +1,321 @@
+/**
+ * Shufflehound Admin Panel Styles
+ */
+.shufflehound-content *:focus {
+    text-decoration: none;
+    outline:none;
+    border: none;
+    box-shadow: none;
+}
+
+.row {
+    margin: 0 4px;
+}
+
+.col-md-4,
+.col-md-6 {
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: top;
+}
+
+.col-md-4 {
+    width: 33.3%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+@media (max-width: 1024px) {
+    .col-md-4 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .col-md-4,
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .shufflehound-content .shufflehound-dashboard-title,
+    .shufflehound-content .shufflehound-dashboard-item,
+    .shufflehound-content .shufflehound-dashboard-list {
+        margin-right: 0;
+    }
+}
+
+
+/**
+ * Titles
+ */
+.shufflehound-dashboard-title {
+    margin-right: 30px;
+}
+
+.shufflehound-dashboard-title h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.shufflehound-dashboard-title p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    line-height: 170%;
+    color: #7b7b7b;
+}
+
+
+/**
+ * Item Boxes
+ */
+.shufflehound-dashboard-item,
+.shufflehound-dashboard-list {
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    margin-right: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.shufflehound-dashboard-item {
+    padding: 25px 30px;
+}
+
+.shufflehound-dashboard-item-icon {
+    position: absolute;
+    top: 0; left: 0;
+    padding-left: 25px;
+    padding-top: 30px;
+    opacity: 0.7;
+}
+
+.shufflehound-dashboard-item-content {
+    display: block;
+    margin-left: 55px;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.shufflehound-dashboard-item .shufflehound-dashboard-item-content:hover h3 {
+    opacity: 0.7;
+}
+
+.shufflehound-dashboard-item h3,
+.shufflehound-dashboard-list-item h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.shufflehound-dashboard-item p,
+.shufflehound-dashboard-list p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    line-height: 170%;
+    color: #7b7b7b;
+}
+
+.shufflehound-dashboard-list p a {
+    color: #7b7b7b;
+}
+
+.shufflehound-dashboard-item i {
+    font-size: 36px;
+}
+
+.shufflehound-dashboard-list-item {
+    position: relative;
+    padding: 25px 30px;
+}
+
+.shufflehound-dashboard-list-item:not(:last-child) {
+    padding-bottom: 0px;
+}
+
+.shufflehound-dashboard-list-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.shufflehound-dashboard-list-item .shufflehound-dashboard-item-icon {
+    padding-left: 32px;
+    padding-top: 38px;
+}
+
+.shufflehound-dashboard-list-item i {
+    font-size: 24px
+}
+
+.shufflehound-dashboard-list-item p a {
+    text-decoration: none;
+}
+
+.shufflehound-dashboard-list-item-outdated i,
+.shufflehound-dashboard-list-item-outdated h3,
+.shufflehound-dashboard-list-item-outdated p,
+.shufflehound-dashboard-list-item-outdated p a {
+    color: #F44336!important;
+}
+
+.shufflehound-dashboard-item-data p {
+    line-height: 190%;
+}
+
+.shufflehound-dashboard-item-data p:first-child {
+    margin-top: 0;
+}
+
+.shufflehound-dashboard-item-data strong {
+    color: #23282d;
+    font-weight: bold;
+}
+
+
+/**
+ * Notices
+ */
+.shufflehound-notice {
+    background-color: rgb(248, 247, 211);
+    border: 1px solid rgb(228, 226, 168);
+    border-radius: 3px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.shufflehound-notice span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.shufflehound-notice p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+
+
+/**
+ * Demo Content Install
+ */
+.ocdi__gl-search-input {
+    border-radius: 100px;
+    padding: 3px 17px;
+    height: 36px;
+    margin-top: 8px;
+    box-shadow: none!important;
+    font-size: 13px;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-buttonpane button,
+.ocdi__gl .ocdi__gl-item-button {
+    border-radius: 100px;
+    border-width: 0;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 13px;
+    height: 36px;
+    line-height: 35px;
+    margin-top: -3px;
+    padding-left: 14px;
+    padding-right: 14px;
+    transition: 0.5s cubic-bezier(0.18, 0.27, 0.14, 1.53);
+    font-weight: 600;
+}
+
+.ocdi__gl .ocdi__gl-item-button:focus {
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-buttonpane button:not(.button),
+.ocdi__gl a.ocdi__gl-item-button {
+    background-color: #efefef;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-buttonpane button:not(.button):focus,
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-buttonpane button:not(.button):hover,
+.ocdi__gl a.ocdi__gl-item-button:focus
+.ocdi__gl a.ocdi__gl-item-button:hover {
+    background-color: #eaeaea;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] button.button,
+.ocdi__gl button.ocdi__gl-item-button {
+    background-color: #85bf08;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] button.button:focus,
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] button.button:hover,
+.ocdi__gl button.ocdi__gl-item-button:focus,
+.ocdi__gl button.ocdi__gl-item-button:hover {
+    background-color: #74a901;
+}
+
+.ocdi__gl-item-footer--with-preview h4.ocdi__gl-item-title {
+    width: calc(100% - 150px);
+}
+
+.ocdi__gl .ocdi__gl-item-footer {
+    padding-left: 15px;
+}
+
+
+/* Dialog */
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 45px rgba(0,0,0,.25);
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] {
+    min-width: 360px;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-titlebar {
+    height: 50px;
+    line-height: 48px;
+    font-size: 18px;
+    padding-left: 22px;
+}
+
+.ocdi__modal-item-title {
+    font-size: 18px;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-buttonpane button {
+    height: 40px;
+    line-height: 37px;
+    font-size: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-buttonpane button:not(.button) {
+    margin-right: 8px;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-titlebar-close {
+    height: 50px;
+    width: 50px;
+    transition: 0.5s cubic-bezier(0.18, 0.27, 0.14, 1.53);
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-titlebar-close:hover,
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-titlebar-close:focus {
+    opacity: 0.6;
+    color: #555;
+}
+
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-content,
+.ui-dialog[aria-describedby="js-ocdi-modal-content"] .ui-dialog-buttonpane {
+    padding-left: 22px;
+    padding-right: 22px;
+}

@@ -1,0 +1,754 @@
+Version 3.3.0
+* Added - Lazy loading options for multiple elements
+* Customizer - Added all theme setting options, which wasn't available before
+* Fixed - Customizer options and theme options going out of sync
+* Fixed - Internet Explorer image point element positon issue
+* Fixed - Internet Explorer won't vertically center columns content
+* Fixed - Single image element hover link not showing in some cases
+
+Version 3.2.5
+* Added - "Max Width Alignment" option for WPbakery page builder rows and columns
+* Updated - Links to HTTPS everywhere where it is possible
+* Fixed - Theme settings reverts to default in SSL mode (in some cases)
+
+Version 3.2.4
+* Added - Option to change heading to span
+* Added - New Image Gallery element for grid image layout
+* Added – Photography (WPbakery page builder) demo
+* Updated - WPbakery Page builder to 5.5.4 version
+* Renamed - Old Image Gallery to Image Gallery (slider)
+* Fixed - Google maps element showing debugging information in page builder
+* Fixed - Jevelin element order in WPbakery page builder
+
+Version 3.2.3
+* Added - Creative Home (WPbakery page builder) demo
+* Added - New design for OCDI demo installer
+* Fixed - Demo installer installing issue
+
+Version 3.2.2
+* Added - One page navigation active link color on scroll and clik actions
+* Imporoved - OCDI demo installing process
+* Fixed - Lightbox duplicating images
+
+Version 3.2.1
+* Added - Shadow option for WPbakery page builder rows
+* Added - Option to disable border in smartphone and table for WPbakery columns
+* Added - Hover element option for heading element
+* Added - Options to Button element Mobile Alignment option
+* Added - Option to keep both logo image and logo text visible
+* Improved - WPbakery page builder responsiveness
+* Fixed - Titlebar portfilio link issue in multisites
+* Fixed - Event element issue with html tags in WPbakery page builder
+* Fixed - WPbakery page builder frontend editor button issue in some cases
+* Fixed - WooCommerce categories element categories output issue
+* Fixed - Header dropdown style 2 cart styling issue
+* Fixed - Gravity forms design issue
+
+Version 3.2.0
+* Added - Icon Box Slider element to WPbakery page builder
+* Added - 4 columns option for blog posts element
+* Added - Extra options for WPbakery page builder inner row element
+* Added - Background hover option for WPbakery page builder columns
+* Improved - WPbakery page builder Contact Form 7 element options
+* Improved - Header logo text option
+* Updated - Envato Market Plugin to latest version
+* Updated - POT Translation file
+* Fixed - WPbakery page builder tabs, event and heading
+elements styling options isn't working correctly
+* Fixed - Pricing table popover issue in some specific cases
+* Fixed - Icon box element left side icon blank space when no icon is set
+* Fixed - WooCommerce Categories order issue
+* Fixed - Translation issue in a few places
+* Fixed - Accordions item icon not working for style 5
+* Fixed - Tabs and Accordions doesn't work in some cases
+* Fixed - Counter up doesn't count till the end in some cases
+* Fixed - Parallax video doesn't work in some cases
+* Fixed - Unyson contact form JS issue
+* Fixed - Shop secondary product image won't streach correctly
+* Other - Small changes and improvements
+
+Version 3.1.1
+* Added - Heading (pro) element to WPBakery page builder
+* Added - List element to WPBakery page builder
+* Added - Icon element to WPBakery page builder
+* Added - Tabs element to WPBakery page builder
+* Added - Timeline element to WPBakery page builder
+* Added - varios options to Inner Column in WPBakery page builder
+* Fixed - WPBakery page builder google maps element styling issue
+* Updated - Screenshot for both parent and child themes
+
+Version 3.1.0
+* Added - Visual Composer support
+* Added - Visual Composer plugin installer
+* Added – Basic Home (WPbakery page builder) demo
+* Added - 30 elements to Visual Composer
+* Added - More image comparison element image sizes
+* Improved - Unyson demo installer demo order
+* Fixed - Image points bottom empty space issue
+* Fixed - Portfolio widget issue with loop
+* Fixed - Heading animated is working fine only for second and above text fiekds
+* Fixed - Demo installation issue when theme settings needs to be resaved
+
+Version 3.0.5
+* Added - Education demo
+* Added - Option to load blog posts with load more button
+* Added - Option to load blog posts with infinite scroll option
+* Added - Option to change blog posts per page for specific blog pages
+* Added - New WooCoomerce recent posts AJAX element
+* Added - New style in contact form and contact form 7 elements
+* Added - New style for video player icon
+* Added - Option to choose 2 columns for blog posts element
+* Added - Option to change title font size for counter element
+* Added - Option to set section element max width
+* Added - Option to disable quote icon for testimonials element
+* Added - Option to change titlebar color
+* Improved - OCDI demo list order from newest to older
+* Fixed - Recent posts widget issue with loop
+* Fixed - Some PHP 7.2 related notices
+* Fixed - Theme setting CSS won't load in some specific cases
+* Fixed - Issue with icon box content links
+
+Version 3.0.4
+* Added - Layout option for portfolio element (choose grid to get correct item order)
+* Added - Option to turn on autoplay for portfolio galleries
+* Improved - Theme front-end loading performance by optimising CSS/JS files
+* Improved - Theme front-end loading performance by optimising PHP side
+* Imporved - Contact widget and contact information in header accepts links and shortcodes
+* Improved - Portfolio gallery lightbox now can be navigated with arrows and buttons
+* Updated - POT translation file
+* Reduced - Standard page size to improve loadng performance
+* Fixed - Pricing table element currency symbol styling issues
+* Fixed - Icon box slider tab issue on mobile devices
+* Fixed - Shop tabs bottom line wrong not displaying correctly
+* Fixed - Notice feature not working correctly on mobile devices
+* Fixed - Pages with link "blog" sometimes have redering issues
+* Fixed - Sticky light mobile header styling issues
+* Fixed - Pie chart animation sometimes doesn't work
+* Fixed - Some PHP notice issues
+* Fixed - Related posts option doesn't work
+* Fixed - WooCommerce outdated files issue
+
+Version 3.0.3
+* Improved - Loading performance in frontend
+* Fixed - Media library not working in some cases
+* Fixed - Jevelin dashboard child theme issue
+* Fixed - Woocommerce deprecated notices
+* Removed - Some development enviroment related code
+
+Version 3.0.2
+* Added - Crypto demo
+* Added - Option to change global content borders
+* Added - Option to change global buttons buttons background color
+* Added - Option to change global content buttons background hover color
+* Added - Option to change global content buttons text color
+* Added - Option to change global content input, textarea background color
+* Added - Option to change global content input, textarea border color
+* Added - Option to change global content input, textarea text color
+* Added - Option to change search widget icon background color
+* Added - Option to change search Widget icon text color
+* Added - Option to add padding between columns when background image image is used
+* Added - Option to change text group element layout, font and font weight
+* Added - Option to add animations for icon element
+* Added - Option to create background gradient for progress bar element
+* Added - Option to disable play icon for video player
+* Added - New style for contact form element
+* Updated - Translation file
+* Fixed - Recent portfolio items showing image icons, when image is not available
+* Fixed - Issue when changing background color changes menu item color
+* Fixed - Issue when changing background color 404 page have a white background
+* Fixed - IE issues with parallax scrolling by disabling it as it is not fully supported
+
+Version 3.0.1
+* Fixed - Theme setting loading issue for some WP installations
+
+Version 3.0.0
+* Added - Jevelin dashboard
+* Added - Beauty demo to OCDI demo installer
+* Added - Basic, Creative, Event to OCDI demo installer
+* Added - Fitness, Nature, Photography to OCDI demo installer
+* Updated - Revolution Slider to the latest version
+* Deprecased - Unyson demo content installer is now fallback method
+* Removed - Unyson demo content installer links
+* Removed - SEO Unyson Extension to improve performance
+
+Version 2.8.1
+* Added - Beauty demo
+* Added - WP Instagram Widget support
+* Added - New accordion element style
+* Added - New contact form element style
+* Added - New widget area to use in page builder
+* Fixed - Onepage scrolling not working correctly
+* Fixed - Empty space element related issue
+* Fixed - Link post style links doesn't work as expected
+* Fixed - Header cart padding issue in some cases
+* Fixed - TinyMCE custom styles comptatibility issue
+
+Version 2.8.0
+* Added - Foodie and Coming Soon demos
+* Added - Contact Form 7 element
+* Added - New shadow for columns element
+* Added - Border radius option for columns and section elements
+* Added - Horizontal alginment responsiveness option for column element
+* Added - New style option for icon group elements
+* Added - New option under justify columsn height to show section in full browser height
+* Added - Min height option for section element
+* Added - New footer copyright styles and option to set custom padding
+* Added - Experimental preview feature to visually show all empty space elemets
+(small transparent icon in the right top corner, available only for administrators)
+* Added - Contact Form 7 to recommended plugins install list
+* Fixed - JavaScript warning for some users when using onepage scrolling
+* Improved - Countdown element can now have rgba colors for title and number options
+* Improved PHP 7.2 compatibility
+
+Version 2.7.3
+* Added - Option to change comments max depth
+* Added - Feature to navigate sliders with arrow keys
+* Updated - Yellow Pencil plugin
+* Fixed - PHP 7.2 copatiblity issue
+* Fixed - Google maps icon is not showing up
+* Fixed - WooCommerce outdated copies issue
+
+Version 2.7.2
+* Added - option to enable/disable WooCommerce theme custom item increase button (for plugin compatibility)
+* Updated - Revolution Slider and Yellow Pencil plugin
+* Fixed - WooCommerce shows quantity label where it should be hidden
+* Fixed - Fixed WooCommerce input select responsiveness issues
+* Fixed - Page background color not working
+* Removed - Mega menu column hide, which cause multiple issues
+
+Version 2.7.1
+* Added - Option to enable portfolio comments (notice: in some cases you will also need to enable it for items itselfes)
+* Added - Option to show filters when pagination is enabled for portfolio element
+* Added - Pagination option for portfolio 2.0 element
+* Added - Option to add background image in boxed layout
+* Updated - Scrolling and parrallax related jQuery plugins
+* Fixed - "Blog" page template inconsistency
+* Fixed - Inline mobile navigation links doesn't closes in some cases
+* Fixed - Fatal error related to old PHP versions in demo.php file
+* Fixed - Google Maps RetiredVersion warning
+* Fixed - Recent post element carousel option issue
+
+Version 2.7.0
+* Added - Option to show also editor content in blog pages
+* Added - Portfolio category page pageination with option to change items per page
+* Added - Portfolio category page option to change layout and column count
+* Improved - Inline mobile navigation links now closes dropdown
+* Improved - Portfolio element won't show blank categories
+* Fixed - Section parallax backgrounds sometimes doesn't work as expected
+* Fixed - Recent posts element columns option doesn't work when carousel is enabled
+* Fixed - Recent posts, porfolio elements doesn't show all categories
+* Fixed - Portfolio category pages not working correctly
+* Other - Minor improvements
+
+Version 2.6.6
+* Added - Option to change titlebar title heading type
+* Added - Option for default page layout to improve ease of use
+* Added - Option to limit portfolio "All" tab item count
+
+Version 2.6.5
+* Updated - Revolution Slider plugin to the latest version
+* Improved - Pagination links for improved SEO
+* Fixed - file:"ie.css" is missing for child theme
+* Fixed - Issue when social share icons are hidden, but clickable
+* Fixed - Page with "blog" slug ignores content
+
+Version 2.6.4
+* Fixed - Multiple Internet Explorer styling issues
+* Fixed - Shufflehound Image V2 sometimes doesn't allow to select/upload image
+
+Version 2.6.3
+* Added - Position options for column
+* Added - Button element option to change font size
+* Added - Image gallery element options to add shadows, change border radius, dots position and color
+* Added - Columns element options to choose max width and horizontal alignment
+* Added - Accordion element new style
+* Improved - Column element options ease of use
+* Improved - Mega menu now is full header size
+* Fixed - Unyson page builder color picker related issue
+
+Version 2.6.2
+* Added - Option to change image gallery dots alignment
+* Added - New single image shadow option
+* Added - New list style
+* Fixed - Single Image bottom extra whitespace issue
+
+Version 2.6.1
+* Added - Related posts for single blog page
+* Fixed - Missing Unyson color picker issue
+* Notice - Please skip Unyson 2.7.9 version if possible
+
+Version 2.6.0
+* Added - Yellow Pencil Pro: Visual CSS Style Editor plugin
+* Improved - Reduced theme size to more than 70%
+* Improved - Theme installation time
+* Improved - Server installation requirements, due to low size
+* Removed - Outdated local demo (more than 400 files)
+
+Version 2.5.6
+* Fixed blog post style excerpt not working
+* Fixed word translation issue
+* Fixed footer widgets disappearing
+
+Version 2.5.5
+* Added - Construction demo
+* Added - New tab style
+* Added - Cart icon to header layout 7
+* Improved - RTL functionality
+* Improved - Child theme compatibility replacing theme files
+* Fixed - Mobile header dropdown freezes in some cases
+* Fixed - Mobile header navigation icon position issue
+* Fixed - Iconbox slider scroll animation issue with a few slides
+* Fixed - Parallax footer issue with mobile header
+
+Version 2.5.4
+* Getting ready for construction demo
+* Added - New accordion style (left side)
+* Added - New header style
+* Improved - Heading element
+* Fixed - Header style 7 alignment issue
+* Fixed - Social Google plus icon not showing up
+
+Version 2.5.3
+* Updated - Revolution slider plugin
+* Fixed - Internet Explorer logo link not working
+* Fixed - Notice feature remember feature bot working in some cases
+
+Version 2.5.2
+* Added - Autospot demo
+* Added - Image points style option
+* Added - Option to write logo text
+* Added - Margin option for section
+* Added - Iconbox improved responsiveness option
+* Added - Option to center column elements in mobile view
+* Updated - Recommended plugin list
+* Updated - POT/translation file
+* Fixed - Not translatable string
+
+Version 2.5.1
+* Added - Improved demo content installation method
+* Fixed - Fatal error when blog slider not found
+* Fixed - Lightbox related issue
+* Fixed - Section visibility option
+* Fixed - Slider carousel causes auto scroll issue
+* Improved - Multiple element options
+
+Version 2.5.0
+* Added option to add pagination for portfolio element
+* Added option to add z-index for column element
+* Updated Revolution Slider to latest 5.4.5.2 version
+* Updated simple line icons
+* Improved left header responsiveness
+* Improved blog small style heading size
+* Fixed WooCommerce product hover animation
+* Fixed header blank shopping cart design
+* Fixed NULL warning message
+* Fixed recent posts widget border issue
+* Fixed titlebar breadcrumbs color issue
+* Fixed image gallery auto scrolling whole page issue
+* Fixed Featured image hover issue
+* Fixed left header logo not clickable
+* Fixed various design layout issues
+
+Version 2.4.13
+* Updated lightcase and slick plugins
+* Fixed overlapping logo on Left Header layout
+* Fixed issue when titlebar can't be disabled
+* Fixed sticky mobile header is forced white
+* Fixed issue when mobile navigation link can't be clicked
+* Fixed image gallery duplicate issue in lightbox
+* Fixed Firefox related slide navigation issue
+* Fixed light titlebar color issue
+* Fixed a few WooCommerce styling issues
+* Fixed subscribe alignment issue
+
+Version 2.4.12
+* Improved page load speed performance
+* Fixed text editor dropdown issue
+* Fixed a single post SEO issue
+* Fixed a titlebar related SEO issues
+
+Version 2.4.11
+* Added option to show copyrights text in multiple lines
+* Fixed HTML syntax error
+* Fixed footer widgets not working
+
+Version 2.4.10
+* Added option change WooCommerce lightbox
+* Fixed outdated copies of some WooCommerce templates
+* Fixed WooCommerce lightbox not working on single page
+* Fixed child theme translation issue
+* Fixed image widget URL issue
+* Fixed portfolio 2.0 element categories issue
+* Fixed a few typos
+
+Version 2.4.9
+* Updated Revolution Slider plugin to the latest version
+
+Version 2.4.8
+* Added language switcher in header for WPML and Polylang plugins
+* Added option to hide header logo (even image is added)
+* Improved portfolio page images alt attribute for SEO and lightbox purposes
+* Improved portfolio element images alt attribute for SEO purposes
+* Improved (reduced) blog grid style image size for faster page loading
+* Fixed left header parallax footer alignment
+* Fixed some PHP language related issues
+* Fixed portfolio element issue, when lightbox isn't working
+
+Version 2.4.7
+* Fixed partners element IE scaling issue
+* Fixed WooCommerce recent product element carousel and columns issues
+* Fixed recent post widget wrong author URL issue
+* Fixed sticky header navigation issue
+
+Version 2.4.6
+* Add option to change image size in single image element
+* Fixed WooCoomerce lightbox not working issue
+* Fixed Gravity forms styling issues
+* Fixed portfolio specific categories not working
+* Fixed iPad navigation dropdown hiding on scroll
+* Improved Unyson shortcode layout inside default editor
+
+Version 2.4.5
+* Fixed WooCommerce 3.0 compatibility issues
+* Fixed issue when WooCommerce product out of stock info message isn't visible
+* Fixed various other WooCommerce layout issues
+* Fixed issue when footer widgets isn't hidden for some pages
+
+Version 2.4.4
+* Added new select dropdown to improve theme ease of use
+* Added option to change partners element autoplay speed
+* Added option to change default portfolio page URL in breadcrumbs
+* Fixed WooCommerce 3.0 compatibility
+* Fixed search Results for text in the breadcrumbs is not translation ready
+* Fixed recent posts widget author URL does not work
+
+Version 2.4.3
+* Fixed some category UI render issues
+* Fixed header navigation icons not working on mobile
+* Fixed mobile header render issues, when using right desktop header with side header
+* Fixed contacts form loader doesn't show up
+* Fixed theme option - items additional information not working
+* Fixed WooCommerce custom title in breadcrumb not working
+
+Version 2.4.2
+* Improved Google Analytics integration
+* Fixed Visual Composer compatibility by creating special page template
+* Fixed live documentation and support integration SSL issue
+
+Version 2.4.1
+* Added startup demo
+* Added new style for contact form element
+* Added new option to change submit button colors for contact form Elements
+* Added few options for heading and text elements
+* Added shadow and gradient options for icon element
+* Other various improvements
+
+Version 2.4.0
+* Added portfolio demo
+* Added new portfolio 2.0 element
+* Added option for blog posts to select them by tags
+* Added heading pro option to make text extra light
+* Added new header layout
+* Added shortcode support for copyrights text
+* Fixed theme not showing included Revolution Slider updates
+* Fixed WooCommerce categories element columns option issue
+* Fixed WooCommerce dropdown issue in Firefox browser
+* Fixed issue, when tag, category and search pages doesn't have the right header layout
+* Improved single post page SEO
+* Improved SEO for tag and category pages
+* Improved standard and sticky header position algorithm
+* Improved white border option
+* Improved portfolio single page
+* Other various improvements
+
+Version 2.3.2
+* Added option to redirect portfolio item page URL to different page
+* Improved SEO for single image and image gallery elements
+* Fixed footer column count issue
+
+Version 2.3.0, 2.3.1
+* Added option move header below titlebar
+* Added option for timeline to enqueue iframe content
+* Increased Description Length limit
+* Improved iOS devices compatibility
+* Improved performance mode
+* Improved hamburger menu animation
+* Improved header search style 2
+* Improved Firefox navigation responsiveness
+* Improved side header responsiveness
+* Fixed typo in word length
+* Fixed social share issue for posts with special characters
+* Fixed few performance mode issues
+
+Version 2.2.3
+* Added predefined templates for basic, photography and event homepages
+* Fixed Slider Revolution error, when given slide is not found
+* Fixed Vimeo embed bug
+* Fixed blog items per page not working
+* Fixed blog description length no working
+
+Version 2.2.2
+* Added documentation inside theme settings panel
+* Added support forum window inside theme settings panel
+* Fixed tabs element typos
+* Other small improvements
+
+Version 2.2.1
+* Added installation troubleshooting button with information block in demo installation page
+* Added option for pricing table to make first symbol small or large
+* Improved contact form error messages
+* Improved Facebook video compatibility
+* Fixed header type for single product page
+* Fixed missing WooCommerce account link for header 4
+* Fixed WooCommerce items per page not working
+* Fixed countdown element typo
+* Fixed table element row issue
+* Fixed back to top hide issue
+* Fixed icon pack loading issue
+
+Version 2.2.0
+* Added performance option to improve page loading speed
+* Added new option to make mobile header sticky
+* Added new options for Icon Box Slider element
+* Added option to embed content in accordions
+* Improved header to header sticky animation
+* Fixed customizer fatal error when Unyson is disabled
+* Fixed project page content issue
+* Fixed post warning issue
+* Fixed pagination issue for the front page
+
+Version 2.1.1
+* Added full screen search option for header
+* Fixed customizer update issue
+* Fixed Slider Revolution installation issue
+
+Version 2.1.0
+* Added option to disable one page navigation
+* Add Output HTML element support to use shortcode tags
+* Improved theme documentation
+* Improved WooCommerce variable product layout
+* Fixed customizer sync issue
+* Fixed portfolio page issue
+* Fixed hidden notice issue
+* Fixed PHP warning message
+* Fixed social share issue on mobile
+* Fixed column animation issue
+* Fixed timeline element PHP error
+
+Version 2.0.4 and 2.0.5
+* Updated Jevelin Child theme with multiple improvements
+* Updated Revolutin Slider plugin
+* Revolution Slider update fix
+* Fixed search page header layout
+* Fixed small typo
+
+Version 2.0.3
+* Fixed mobile navigation button position
+* Fixed Custom CSS not working correctly
+* Fixed notice option JS error
+* IE browser compatibility improvements
+
+Version 2.0.2
+* Added 3 blog demos
+* Added option to use Revolution Slider as titlebar
+* Added option to add blog categories tabs
+* Added new blog styles
+* Added blog style option
+* Added image v2 widget
+* Fixed Google Maps API key issues
+* Various other improvements
+
+Version 2.0.1
+* Added option to change header search results
+* Added option to change header icons size
+* Added new option style header
+* Improved IE compatibility
+* Fixed multiple WooCommerce bugs
+* Various other improvements
+
+Version 2.0.0
+* Added shop demo
+* Added WooCommerce Categories element
+* Added new WooCommerce style for product items
+* Added lightbox carousel for image gallery element
+* Improved local basic demo installation speed by more than 50%
+* Improved WooCommerce responsiveness for mobile devices
+* Improved theme loading speed
+* Updated basic demo files
+* Updated Revolution Slider version
+* Updated multiple JS and CSS plugins
+* Fixed parallax video not loading
+* Fixed multiple design flaws
+* Lot of other improvements
+
+Version 1.3.12
+* Small fix to improve page load time in some cases
+
+Version 1.3.11
+* Added option for Icon Box Slider to change color
+
+Version 1.3.10
+* Fixed blog layout issue, when there was no link icon
+* Fixed counter element issue with some numbers
+
+Version 1.3.9
+* Improved Heading Animation loading
+* Fixed Accordion scrolling issue
+* Fixed toggler scrolling issue
+
+Version 1.3.8
+* Fixed Unsyon FrameWork notice issue
+* Fixed left side header footer alignment issue
+* Other minor fixes
+
+Version 1.3.7
+* Minor bug fix
+
+Version 1.3.6
+* Added option to add google maps API
+* Improved header navigation for longer item names
+
+Version 1.3.5
+* Updated Revolution slider to the latest version
+* Fixed parallax footer minor issue
+* Fixed blog post author image margin issue
+* Fixed widget image margin issue
+* Other minor changes
+
+Version 1.3.4
+* Added support for WordPress Shortcodes extension
+* Improved page load speed (for some users more than 50% speed increase)
+* Fixed portfolio widget overlay issue
+
+Version 1.3.3
+* Fixed blog, portfolio overlay issues
+* Other minor fixes
+
+Version 1.3.2
+* Added new landing 2 demo
+* Added new timeline style
+* Fixed minor issues
+
+Version 1.3.1
+* Added iframe slider for portfolio
+* Updated WooCommerce files to support its latest version
+* Multiple bug fixes
+
+Version 1.3.0
+* Added new landing demo
+* Added additional font option for heading pro element
+* Added new contact form style
+* Added option to hide section for mobile or desktop
+* Added option to add divider for partners element
+* Added option to remove portfolio links for single page
+* Fixed parallax background side menu issue
+* Improved WooCommerce compatibility
+
+Version 1.2.5
+* Added option for blog posts element to get unlimited posts
+* Fixed minor issues
+
+Version 1.2.4
+* Updated language files
+* Fixed plugin install error message
+
+Version 1.2.3
+* Added WooCommerce 2.6.0 support
+* Added WooCommerce login button inside header 3 style
+* Added popover option for single image element
+* Fixed input space scroll issue
+* Fixed some header position issues
+* Fixed mobile header not showing up
+* Fixed faulty custom CSS breaks page styling
+* Removed local wedding demo to favor remote demos
+* Updated demo content page data
+* Updated WooCommerce files to support 2.6.0 version
+
+Version 1.2.2
+* Improved header social icons placement
+* Improved google fonts enqueue
+* Fixed body styling issues
+* Fixed Google Adsense issues
+* Fixed parallax footer option issue
+
+Version 1.2.1
+* Updated Revolution Slider plugin
+* Updated TGM Plugin Activation plugin
+* Updated theme options cover
+* Fixed social icons URL issue
+* Fixed body font enqueue issue
+* Other minor improvements
+
+Version 1.2.0
+* Added boxed demo
+* Added new blog posts element layout
+* Added mega menu support for 5 columns
+* Added new back to top button layout
+* Added mew styles for table element
+* Updated basic demo
+* Updated corporate demo
+* Updated few plugins
+* Improved one-page navigation
+* Improved multi-site compatibility
+* Improved Mozilla Firefox and Safari compatibility
+* Improved contact form element
+* Fixed tab content shortcode render issue
+* Fixed parallax footer position issue
+
+Version 1.1.0
+* Added corporate demo
+* Added new team layout
+* Added new portfolio filter layout
+* Added new icon box slider element
+* Added new button style
+* Added new parallax footer option
+* Added few new animations
+* Improved page loader animations
+* Improved button element options
+* Updated theme options style
+* Other improvements
+
+Version 1.0.8
+* RTL (Right to Left) support
+
+Version 1.0.7
+* Added new portfolio overlay
+* Improved portfolio taxonomies
+* Improved portfolio links and hovers
+* Reduced demo content size by 60% (by adding remote demos)
+* Updated Wedding demo content
+* Other minor improvements
+
+Version 1.0.6
+* Added weddings demo
+* Added new portfolio layout
+* Added popover for pricing table
+* Added iPad landscape navigation option
+* Updated Slider Revolution plugin
+* Improved divider shortcode
+* Improved text in frame shortcode
+* Improved basic demo database size
+* Multiple bug fixes
+
+Version 1.0.5
+* Added Customizer support
+* Add few options for divider shortcode
+* Minor improvements
+
+Version 1.0.4
+* Added Contact Form 7 support
+* Minor improvements
+
+Version 1.0.3
+* Contact form shortcode design improvements
+* Minor bug fixes
+
+Version 1.0.2
+* Added fitness demo
+* Added event shortcode
+* Added text in frame shortcode
+* Added few new options
+* Minor bug fixes
+
+Versions 1.0.0, 1.0.1
+* Initial releases

@@ -1,0 +1,62 @@
+[Sat Mar 09 17:53:15.283523 2019] [ssl:warn] [pid 1643] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Mar 09 17:53:15.283597 2019] [ssl:warn] [pid 1643] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Mar 09 17:53:15.283685 2019] [suexec:notice] [pid 1643] AH01232: suEXEC mechanism enabled (wrapper: /opt/lampp/bin/suexec)
+[Sat Mar 09 17:53:15.358020 2019] [ssl:warn] [pid 1645] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Mar 09 17:53:15.358044 2019] [ssl:warn] [pid 1645] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Mar 09 17:53:15.358166 2019] [lbmethod_heartbeat:notice] [pid 1645] AH02282: No slotmem from mod_heartmonitor
+[Sat Mar 09 17:53:15.369245 2019] [mpm_prefork:notice] [pid 1645] AH00163: Apache/2.4.38 (Unix) OpenSSL/1.0.2q PHP/7.3.2 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Sat Mar 09 17:53:15.369292 2019] [core:notice] [pid 1645] AH00094: Command line: '/opt/lampp/bin/httpd -E /opt/lampp/logs/error_log -D SSL -D PHP'
+sh: 1: -t: not found
+[Sun Mar 10 18:00:10.331234 2019] [ssl:warn] [pid 1123] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Mar 10 18:00:10.360738 2019] [ssl:warn] [pid 1123] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 10 18:00:10.361184 2019] [suexec:notice] [pid 1123] AH01232: suEXEC mechanism enabled (wrapper: /opt/lampp/bin/suexec)
+[Sun Mar 10 18:00:10.461053 2019] [ssl:warn] [pid 1124] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Mar 10 18:00:10.461126 2019] [ssl:warn] [pid 1124] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Mar 10 18:00:10.461435 2019] [lbmethod_heartbeat:notice] [pid 1124] AH02282: No slotmem from mod_heartmonitor
+[Sun Mar 10 18:00:11.985030 2019] [mpm_prefork:notice] [pid 1124] AH00163: Apache/2.4.38 (Unix) OpenSSL/1.0.2q PHP/7.3.2 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Sun Mar 10 18:00:11.985113 2019] [core:notice] [pid 1124] AH00094: Command line: '/opt/lampp/bin/httpd -E /opt/lampp/logs/error_log -D SSL -D PHP'
+[Tue Mar 12 22:31:36.918706 2019] [ssl:warn] [pid 5976] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 12 22:31:36.946860 2019] [ssl:warn] [pid 5976] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 12 22:31:37.057677 2019] [ssl:warn] [pid 5998] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 12 22:31:37.057722 2019] [ssl:warn] [pid 5998] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 12 22:31:37.057893 2019] [lbmethod_heartbeat:notice] [pid 5998] AH02282: No slotmem from mod_heartmonitor
+[Tue Mar 12 22:31:38.114390 2019] [mpm_prefork:notice] [pid 5998] AH00163: Apache/2.4.38 (Unix) OpenSSL/1.0.2q PHP/7.3.2 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Tue Mar 12 22:31:38.114447 2019] [core:notice] [pid 5998] AH00094: Command line: '/opt/lampp/bin/httpd -E /opt/lampp/logs/error_log -D SSL -D PHP'
+sh: 1: -t: not found
+[Tue Mar 12 22:58:19.441696 2019] [core:warn] [pid 5998] AH00045: child process 6489 still did not exit, sending a SIGTERM
+[Tue Mar 12 22:58:19.441752 2019] [core:warn] [pid 5998] AH00045: child process 6104 still did not exit, sending a SIGTERM
+[Tue Mar 12 22:58:19.441759 2019] [core:warn] [pid 5998] AH00045: child process 7354 still did not exit, sending a SIGTERM
+[Tue Mar 12 22:58:19.441794 2019] [core:notice] [pid 5998] AH00051: child pid 6441 exit signal Segmentation fault (11), possible coredump in /opt/lampp
+[Tue Mar 12 22:58:20.442343 2019] [core:notice] [pid 5998] AH00051: child pid 6489 exit signal Segmentation fault (11), possible coredump in /opt/lampp
+[Tue Mar 12 22:58:20.442388 2019] [core:notice] [pid 5998] AH00051: child pid 6104 exit signal Segmentation fault (11), possible coredump in /opt/lampp
+[Tue Mar 12 22:58:20.442405 2019] [core:notice] [pid 5998] AH00051: child pid 7354 exit signal Segmentation fault (11), possible coredump in /opt/lampp
+[Tue Mar 12 22:58:20.442470 2019] [mpm_prefork:notice] [pid 5998] AH00169: caught SIGTERM, shutting down
+[Tue Mar 12 22:59:08.709998 2019] [ssl:warn] [pid 8805] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 12 22:59:08.710054 2019] [ssl:warn] [pid 8805] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 12 22:59:08.761224 2019] [ssl:warn] [pid 8806] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 12 22:59:08.761254 2019] [ssl:warn] [pid 8806] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 12 22:59:08.761363 2019] [lbmethod_heartbeat:notice] [pid 8806] AH02282: No slotmem from mod_heartmonitor
+[Tue Mar 12 22:59:08.776908 2019] [mpm_prefork:notice] [pid 8806] AH00163: Apache/2.4.38 (Unix) OpenSSL/1.0.2q PHP/7.3.2 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Tue Mar 12 22:59:08.776963 2019] [core:notice] [pid 8806] AH00094: Command line: '/opt/lampp/bin/httpd -E /opt/lampp/logs/error_log -D SSL -D PHP'
+[Tue Mar 19 20:46:38.930896 2019] [core:warn] [pid 8806] AH00045: child process 8822 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225422 2019] [core:warn] [pid 8806] AH00045: child process 8954 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225494 2019] [core:warn] [pid 8806] AH00045: child process 8991 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225515 2019] [core:warn] [pid 8806] AH00045: child process 6325 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225535 2019] [core:warn] [pid 8806] AH00045: child process 6339 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225554 2019] [core:warn] [pid 8806] AH00045: child process 6340 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225582 2019] [core:warn] [pid 8806] AH00045: child process 6353 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225601 2019] [core:warn] [pid 8806] AH00045: child process 6354 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225620 2019] [core:warn] [pid 8806] AH00045: child process 6355 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:39.225637 2019] [core:warn] [pid 8806] AH00045: child process 6356 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:41.227851 2019] [core:warn] [pid 8806] AH00045: child process 8822 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:41.227904 2019] [core:warn] [pid 8806] AH00045: child process 8954 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:41.227911 2019] [core:warn] [pid 8806] AH00045: child process 8991 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:43.230118 2019] [core:warn] [pid 8806] AH00045: child process 8991 still did not exit, sending a SIGTERM
+[Tue Mar 19 20:46:45.295238 2019] [mpm_prefork:notice] [pid 8806] AH00169: caught SIGTERM, shutting down
+[Tue Mar 19 20:46:56.255255 2019] [ssl:warn] [pid 14293] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 19 20:46:56.255326 2019] [ssl:warn] [pid 14293] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 19 20:46:56.308416 2019] [ssl:warn] [pid 14294] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 19 20:46:56.308457 2019] [ssl:warn] [pid 14294] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 19 20:46:56.308635 2019] [lbmethod_heartbeat:notice] [pid 14294] AH02282: No slotmem from mod_heartmonitor
+[Tue Mar 19 20:46:57.116858 2019] [mpm_prefork:notice] [pid 14294] AH00163: Apache/2.4.38 (Unix) OpenSSL/1.0.2q PHP/7.3.2 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Tue Mar 19 20:46:57.116928 2019] [core:notice] [pid 14294] AH00094: Command line: '/opt/lampp/bin/httpd -E /opt/lampp/logs/error_log -D SSL -D PHP'
